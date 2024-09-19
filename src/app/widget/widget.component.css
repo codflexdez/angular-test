@@ -1,0 +1,28 @@
+.profile-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.profile-img-space {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: azure;
+}
+
+.avatar {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.profile-contact {
+  flex-basis: 30%;
+}
+
+h2 {
+    width: 35%;
+}

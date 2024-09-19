@@ -1,0 +1,56 @@
+.results {
+    display: grid;
+    column-gap: 14px;
+    row-gap: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+    margin-top: 50px;
+    justify-content: space-around;
+  }
+  
+ .flex-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+ }
+
+ .half {
+  width: 40%;
+ }
+ 
+  button {
+    padding: 10px;
+    border: solid 1px var(--primary-color);
+    background: var(--primary-color);
+    color: white;
+    border-radius: 8px;
+  }
+
+  .menu {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+
+  button.actionBtn {
+    margin-top: 1rem;
+    color: var(--primary-color);
+    background: var(--shadow-color);
+    font-weight: 600;
+    font-size: small;
+  }
+
+
+
+  @media (min-width: 500px) and (max-width: 768px) {
+    .results {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    input[type="text"] {
+        width: 70%;
+    }   
+  }
+  @media (max-width: 499px) {
+    .results {
+        grid-template-columns: 1fr;
+    }    
+  }
